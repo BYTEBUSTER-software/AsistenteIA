@@ -14,6 +14,12 @@ class EventIn(BaseModel):
 class Event(EventIn): 
     category: str
 
+class Usuario(BaseModel): 
+    nombre: str
+    email: str
+    password: str
+
+
 def get_events() -> List[Event]:
     # Aquí iría la consulta real si usas base de datos
     return []
